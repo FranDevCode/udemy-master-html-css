@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Tipos de listas</h2>
+    <ul>
+        <li>Listas ordenadas</li>
+        <li>Listas desordenadas</li>
+        <li>Listas de definicion</li>
+        <li>LIstas anidadas</li>
+    </ul>
+        <!-- listas ordenadas-->
+        <h2>Listas ordenadas</h2>
+        <ol><!-- Ordered list-->
+            <li>Item1</li>
+            <li>Item2 </li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+        </ol>
+        <h2>Atributos globales y propios de las listas ordenadas</h2>
+        <ol>
+            <li>style</li>
+            <li>title</li>
+            <li>class</li><!-- ejemplo con CSS -->
+            <li>id</li>
+            <li>dir</li>
+            <li>lang</li>
+            <li><strong>type</strong></li>
+            <li><strong>start</strong></li>
+            <li><strong>reversed</strong></li>
+        </ol>
+        <h2>Como aplicar atributos a una lista ordenada</h2>
+
+        <h3>atributo style</h3><!--No se recomienda su uso aqui, si con CSS-->
+        <ol style="color: brown;">
+            <li>Lista ordenada 1</li>
+            <li>Lista ordenada 2</li>
+            <li>Lista ordenada 3</li>
+            <li>Lista ordenada 4</li>
+        </ol>
+
+        <h3>atributo title</h3><!---->
+        <ol title="Lista de alumnos de programacion">
+            <li>Nombre de alumnos</li>
+            <li>Nombre de alumnos</li>
+            <li>Nombre de alumnos</li>
+            <li>Nombre de alumnos</li>
+        </ol>
+
+        <h3>atributo lang (idioma de lista)</h3><!-- importante para la accesibilidad -->
+        <ol lang="es"><!-- idioma -->
+            <li>Nombre de alumnos</li>
+            <li>Nombre de alumnos</li>
+            <li>Nombre de alumnos</li>
+            <li>Nombre de alumnos</li>
+        </ol>
+
+        <h3>atributo dir (ltr, rtl)</h3><!---->
+        <ol dir="rtl"><!-- ltr por defecto -->
+            <li>Lista ordenada</li>
+            <li>Lista ordenada</li>
+            <li>Lista ordenada</li>
+            <li>Lista ordenada</li>
+        </ol>
+
+        <h3>atributo start</h3><!---->
+        <ol start="5"><!-- -->
+            <li>Lista ordenada</li>
+            <li>Lista ordenada</li>
+            <li>Lista ordenada</li>
+            <li>Lista ordenada</li>
+        </ol>
+
+        <h3>atributo reversed</h3><!---->
+        <ol reversed><!-- -->
+            <li>Lista ordenada</li>
+            <li>Lista ordenada</li>
+            <li>Lista ordenada</li>
+            <li>Lista ordenada</li>
+        </ol>
+        <h3>atributo type (A, a, I, i)</h3><!---->
+        <ol type="I"><!-- ltr por defecto -->
+            <li>Nombre de alumnos</li>
+            <li>Nombre de alumnos</li>
+            <li>Nombre de alumnos</li>
+            <li>Nombre de alumnos</li>
+        </ol>
+
+
+<!--TIPS. wrap en el editor-->
+
+<!-- Listas desordenadas -->
+<h2>Listas desordenadas</h2>
+<h3>Los mismo atributos globales de las listas ordenadas, se aplican a las listas dersordenadas</h3>
+<ul>
+    <li>style</li>
+    <li>title</li>
+    <li>class</li><!-- ejemplo con CSS... -->
+    <li>id</li>
+    <li>dir</li>
+    <li>lang</li>
+    <li><strong>type</strong></li><!-- disc, square, circle-->
+</ul>
+
+<h2>Como aplicar atributos a una lista desordenada</h2>
+<h3>atributo type (circle)</h3>
+<ul type="circle"><!-- por defecto -->
+    <li>Nombre de alumnos</li>
+    <li>Nombre de alumnos</li>
+    <li>Nombre de alumnos</li>
+    <li>Nombre de alumnos</li>
+</ul>
+<h3>atributo type (disc)</h3>
+<ul type="disc"><!---->
+    <li>Nombre de alumnos</li>
+    <li>Nombre de alumnos</li>
+    <li>Nombre de alumnos</li>
+    <li>Nombre de alumnos</li>
+</ul>
+<h3>atributo type (square)</h3>
+<ul type="square"><!-- -->
+    <li>Nombre de alumnos</li>
+    <li>Nombre de alumnos</li>
+    <li>Nombre de alumnos</li>
+    <li>Nombre de alumnos</li>
+</ul>
+<!-- Listas de descripcion -->
+<h2>Listas de descripcion</h2>
+<h3>Los mismo atributos globales de las listas ordenadas, y listas desordenadas se aplican a las listas de descripcion</h3>
+
+<h3>Existen cuatro tipos de listas de descripcion</h3>
+
+<ol>
+    <li>termino y descripcion simple</li>
+    <li>Varios terminos y descripcion simple</li>
+    <li>Termino simple y varias descripciones</li>
+    <li>Varios terminos y varias descripciones</li>
+</ol>
+
+<h3>Como se compone una lista de descripcion?</h3>
+<ul>
+    <li><strong>dl</strong> - representa una lista descriptiva</li>
+    <li><strong>dt</strong> - representa los terminos en la desccrpcion</li>
+    <li><strong>dd</strong> - nos ofrece informacion adicional acerca de un termino de dicha descripcion</li>
+</ul>
+<!-- ermino y descripcion simple -->
+<h3>Termino y descripcion simple</h3>
+<dl>
+    <dt>HolaMundo</dt>
+    <dd>Esta es la descripcion del termino holaMundo, solamnete contiene un termino y una descripcion corta</dd>
+</dl>
+<!-- Varios terminos y descripcion simple -->
+<h3>Varios terminos y descripcion simple</h3>
+<dl>
+    <dt>W3C</dt>
+    <dt>WorldWideWeb</dt>
+    <dt>WWW</dt>
+    <dd>
+        La W3C es el ente encargado de la estandarizacion de las principales tecnologias con las cuales se construye la web, HTML, CSS y JavaScript.
+    </dd>
+</dl>
+<!-- Termino simple y varias descripciones -->
+<h3>Termino simple y varias descripciones</h3>
+<dl>
+    <dt>Google</dt>
+    <dd>Google es el buscador mas utilizado en internet para realizar busquedas de todo tipo</dd>
+    <dd>Google es una de las empresas mas famosas en el mundo de la tecnologia, ya que cuenta con muchos servicios en la nube, ademas de eso, desarrolla constantemente, su algoritmo de busqueda para obtener mejores resulatdos.</dd>    
+    <dd>Google tambien es el creador de Dart un lenguaje de programacion utilizado para la creacion de aplicaciones muultiplataforma, trabaj en conjunto con Flutter tambien crado por Google.</dd>
+</dl>
+<!-- Varios terminos y varias descripciones-->
+<h3>Varios terminos y varias descripciones</h3>
+<dl>
+    <dt>HTML</dt>
+    <dd>Con HTML estructuramos el esqueleto de una pagina web</dd>
+    <dt>CSS</dt>
+    <dd>CSS (Cascading Style Sheets) Hojas de Estilo en Cascada, nos permite darle una apariencia vistosa a nuestra web previamente creada con HTML</dd>
+    <dd>No se debe incluir CSS dentro de un archivo HTML, ya que seria una muy mala practica</dd>
+    <dt>JAVASCRIPT</dt>
+    <dd>Con javascript le damos interactividad a nuestra pagina web, mediante javascript podemos manipular cualquier elemento de HTML y CSS.</dd>
+</dl>
+<!-- Metadatos -->
+<h3>Representacion de metadatos</h3>
+<dl>
+    <dt>Nombre</dt><!--termino-->
+    <dd>FranDev</dd><!--descripcion-->
+    <dt>Edad</dt>
+    <dd>31</dd>
+    <dt>Profesion</dt>
+    <dd>Desarrollador Web</dd>
+    <dt>Pais</dt>
+    <dd>Honduras</dd>
+  </dl>
+
+ 
+
+
+</body>
+</html>
